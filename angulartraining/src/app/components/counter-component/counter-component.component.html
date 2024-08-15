@@ -1,0 +1,9 @@
+<p>counter-component works!</p>
+
+Count is : {{ count | async}}
+<br>
+<input type="number" [ngModel]="count | async" (ngModelChange)="count.next($event)">
+<br>
+Letter is : {{ letter | async}}
+<br>
+{{totalsService.total | async}}
